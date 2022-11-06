@@ -41,6 +41,10 @@ def actions(board):
     """
     Returns set of all possible actions (i, j) available on the board.
     """
+    # attempt at using list comprehension in python 
+    moves = [[row,col] for col in range(3) for row in range(3) ] 
+    return moves
+
     raise NotImplementedError
 
 
